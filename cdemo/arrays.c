@@ -10,16 +10,20 @@ void arrayAdd(int s, int (*Array)[s], int n)
 
 int main()
 {
-  // create an int array 100 long
   int arr[100];
   int (*Array)[100] = &arr;
+  
+  printf("Squared array\n");
   
   for (int i = 0; i < 100; i++)
   {
     arr[i] = i * i;
+    printf("%d\n", arr[i]);
   }
 
   arrayAdd(100, Array, 5);
+  
+  printf("\nSquared array +n\n");
   
   for (int i = 0; i < 100; i++)
     {
