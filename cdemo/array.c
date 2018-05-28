@@ -15,9 +15,12 @@ int main()
 		{
 			arr[i] = i * i;
  		}
+    {
+      printf("Array Values After Function:\n");
+    }
 	arrayAdd(arr, 100, 5);
 	for (int i = 0; i < 100; i++)
 	{
-		printf(Array Values After Function: "%d\n",arr[i]);
+		printf("%d\n",arr[i]);
 	}
 }
