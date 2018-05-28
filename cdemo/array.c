@@ -1,37 +1,23 @@
 #include <stdio.h>
 
-void main()
+int arrayAdd( int arr[], int s, int n)
 {
-int arr[100];
-int size=sizeof(arr)/sizeof(arr[0]);
-
-for (int i=0; i<size; i++)
-{
-  arr[i]=i*i;
+	for (int i = 0; i < s; i++)
+	{
+		arr[i] = arr [i] + n;
+	}
 }
-
-printf("Values in Initial Array:\n");
-for (int i=0; i<size; i++)
+	
+int main()
 {
-  printf("%d ", arr[i]);
-}
-printf("\n");
-
-void changearr(int s, int (*arr)[s], int n)
-{
-  for (int i=0; i<s; i++)
-  {
-    (*arr)[i]= (*arr)[i]+n;
-  }
-}
-
-int (*ptrtoarr)[size]= &arr;
-changearr(size, ptrtoarr, 5);
-printf("Array Values After Function:\n");
-
-for (int i=0; i<size; i++)
-{
-  printf("%d ", arr[i]);
-}
-printf("\n");
+  int arr[100]; 
+	 for (int i = 0; i < 100; i++)
+		{
+			arr[i] = i * i;
+ 		}
+	arrayAdd(arr, 100, 5);
+	for (int i = 0; i < 100; i++)
+	{
+		printf(Array Values After Function: "%d\n",arr[i]);
+	}
 }
