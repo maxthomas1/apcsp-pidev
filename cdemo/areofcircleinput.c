@@ -12,7 +12,7 @@ void main(void){
 	float mainArea = 0;
 	float r;
 	printf("Enter the first value of the radius\n");
-	fgets(r, );
+	fgets(r, ); /*this is incomplete*/
 	for(r = 3.5; r <= 12.5; r++){
 		mainArea = areaOfCircle(r);
 		printf("the area of the circle with r = %f is %f\n", r, mainArea);
