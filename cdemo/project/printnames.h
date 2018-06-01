@@ -1,0 +1,1 @@
+printStudent(struct Student* student)
