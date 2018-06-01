@@ -1,1 +1,1 @@
-void structs();
+void printStudent(struct Students* student);
